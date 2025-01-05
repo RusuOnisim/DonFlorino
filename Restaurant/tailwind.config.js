@@ -7,9 +7,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: "#3B393A",
-        mainText: "#FAF9F8",
-        secondary: "#F4BF1E",
+        background: "#F5F1E3",
+        mainText: "#3A2E2A",
+        secondary: "#6C5B3B",
       },
       fontFamily: {
         inika: ['Inika', 'serif'],

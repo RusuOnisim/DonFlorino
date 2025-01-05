@@ -1,7 +1,7 @@
 // src/components/Nav.jsx
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../assets/images/logo.jpeg';
+import logo from '../assets/images/loggo.svg';
 
 function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,18 +11,23 @@ function Nav() {
   };
 
   return (
-    <nav className="bg-background/90 text-mainText p-4">
-      {/* Logo or Site Name */}
-      <div className="flex justify-between items-center">
-        <div className="text-xl font-inika">
-          <Link to="/">  
-          <img src={logo} alt="Logo" className="w-32 h-auto" />
-          </Link>
-        </div>
+    <nav
+      className={`bg-[#9B2D20] px-4 lg:p-4 lg:flex lg:justify-between z-50 w-full top-0 sticky transition-all duration-300 ${
+        isMenuOpen ? 'h-[100vh]' : 'h-[10vh]'
+      }`}
+    >
+      {/* Logo Section */}
+      <div className="flex justify-between items-center h-[10vh] w-full ">
+        <Link to="/" className="relative h-full w-full lg:mb-14 overflow-hidden">
+          <img
+            src={logo}
+            alt="Logo"
+            className="object-contain h-[11vh] lg:h-[14vh] absolute left-0"
+          />
+        </Link>
 
-        {/* Hamburger or X Icon */}
+        {/* Hamburger Icon */}
         <div className="lg:hidden" onClick={toggleMenu}>
-          {/* Show Hamburger Menu when isMenuOpen is false */}
           {!isMenuOpen ? (
             <div className="space-y-1">
               <div className="w-6 h-1 bg-mainText"></div>
@@ -30,7 +35,6 @@ function Nav() {
               <div className="w-6 h-1 bg-mainText"></div>
             </div>
           ) : (
-            // Show Close (X) Icon when isMenuOpen is true
             <div className="w-6 h-6 flex flex-col justify-center items-center relative">
               <div className="w-6 h-1 bg-mainText transform rotate-45 absolute"></div>
               <div className="w-6 h-1 bg-mainText transform -rotate-45 absolute"></div>
@@ -40,13 +44,17 @@ function Nav() {
       </div>
 
       {/* Menu Links */}
-      <div className={`lg:flex mt-5 ${isMenuOpen ? 'block' : 'hidden'}`}>
-        <ul className="flex flex-col lg:flex-row items-center space-y-4 lg:space-x-6">
+      <div
+        className={`lg:flex flex-col lg:flex-row items-center space-y-4 lg:space-y-0 lg:space-x-10 mt-5 lg:mt-0 ${
+          isMenuOpen ? 'block' : 'hidden'
+        }`}
+      >
+        <ul className="flex flex-col items-center lg:flex-row space-y-4 lg:space-y-0 lg:space-x-10">
           <li>
             <Link
               to="/"
-              className="text-lg font-karla text-secondary lg:text-mainText lg:hover:text-secondary"
-              onClick={() => setIsMenuOpen(false)} // Close menu when link clicked
+              className="text-lg font-karla text-background"
+              onClick={() => setIsMenuOpen(false)}
             >
               Accueil
             </Link>
@@ -54,7 +62,7 @@ function Nav() {
           <li>
             <Link
               to="/menu"
-              className="text-lg font-karla text-secondary lg:text-mainText lg:hover:text-secondary"
+              className="text-lg font-karla text-background"
               onClick={() => setIsMenuOpen(false)}
             >
               Menu
@@ -63,7 +71,7 @@ function Nav() {
           <li>
             <Link
               to="/contact"
-              className="text-lg font-karla text-secondary lg:text-mainText lg:hover:text-secondary"
+              className="text-lg font-karla text-background"
               onClick={() => setIsMenuOpen(false)}
             >
               Contact
