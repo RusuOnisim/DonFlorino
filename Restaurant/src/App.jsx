@@ -1,9 +1,9 @@
-// src/App.js
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Nav from './components/Nav';  // Updated path to Nav component
-import Home from './pages/Home';     // Updated path to Home page
-import Menu from './pages/Menu';     // Updated path to Menu page
-import Contact from './pages/Contact'; // Updated path to Contact pag
+import Nav from './components/Nav';
+import Home from './pages/Home';
+import Menu from './pages/Menu';
+import Contact from './pages/Contact';
+import PizzaDetails from './pages/PizzaDetalis';
 
 function App() {
   return (
@@ -12,6 +12,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/menu" element={<Menu />} />
+        {/* Use element and replace component with element */}
+        <Route path="/menu/:id" element={<PizzaDetails />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
