@@ -1,11 +1,11 @@
-import Margherita from '../assets/images/Margherita.svg';
-import Marinara from '../assets/images/Marinara.svg';
-import Prosciuto from '../assets/images/Prosciuto.svg';
-import Salami from '../assets/images/Salami.svg';
-import Regina from '../assets/images/Regina.svg';
-import QuattroFormaggi from '../assets/images/QuattroFormaggi.svg';
-import Scampi from '../assets/images/Scampi.svg';
-import FruttiDiMare from '../assets/images/FruttidiMare.svg';
+import Margherita from '../assets/images/Margherita.png';
+import Marinara from '../assets/images/Marinara.png';
+import Prosciuto from '../assets/images/Prosciuto.png';
+import Salami from '../assets/images/Salami.png';
+import Regina from '../assets/images/Regina.png';
+import QuattroFormaggi from '../assets/images/QuattroFormaggi.png';
+import Scampi from '../assets/images/Scampi.png';
+import FruttiDiMare from '../assets/images/FruttidiMare.png';
 
 const pizzasData = [
   { id: 1, name: "Marinara", image: Marinara, description: "Tomate, ail, origan, huile d'olive", price: "7.00 €" },

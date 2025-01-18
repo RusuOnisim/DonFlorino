@@ -1,16 +1,16 @@
 // src/pages/Home.js
-import pizza1 from "../assets/images/pizza1.svg";
+import pizza1 from "../assets/images/Margherita.png";
 
 function Home() {
   return (
     <div className="flex flex-col h-[100%]">
       {/* Background Section */}
-      <div className="bg-background h-[100dvh] relative flex flex-col lg:flex-row items-center justify-center z-1 overflow-hidden">
+      <div className="bg-background h-[100vh] relative flex flex-col lg:flex-row items-center justify-center z-1 overflow-hidden">
         {/* Left Circle Container */}
         <div className="relative flex justify-center items-center w-full lg:w-1/3 h-1/3 lg:h-full ">
           {/* Left Circle */}
-          <div className="absolute flex items-center justify-center border-[3px] border-black/10 rounded-full w-96 h-96 top-[-70px] left-[-50px] lg:w-[600px] lg:h-[600px] lg:top-[-10px] lg:left-[-150px] z-0">
-            <img src={pizza1} alt="Pizza" className="w-[90%] lg:h-[90%]" />
+          <div className="absolute  flex items-center justify-center border-[3px] border-black/10 rounded-full w-96 h-96 top-[-70px] left-[-50px] lg:w-[600px] lg:h-[600px] lg:top-[-10px] lg:left-[-150px] ">
+            <img src={pizza1} alt="Pizza" className="w-[80%] lg:h-[80%] " />
           </div>
         </div>
 
@@ -38,7 +38,7 @@ function Home() {
         </div>
       </div>
 
-      <div className="bg-[#000]/[0.05] h-auto lg:h-[100dvh] grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-2 relative z-10 overflow-hidden">
+      <div className="bg-[#000]/[0.05] h-auto lg:h-[100vh] grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-2 relative z-10 overflow-hidden">
         {/* Top Left Section */}
         <div className="flex py-5 flex-col  items-center justify-center border-b lg:border-b-1 lg:border-r border-[#000]/[0.1] overflow-hidden">
         <h1 className="p-4 lg:pb-10 text-3xl text-mainText">Livraison</h1>

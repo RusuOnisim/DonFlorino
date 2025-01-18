@@ -20,9 +20,10 @@ function Nav() {
       <div className="flex justify-between items-center h-[10vh] w-full ">
         <Link to="/" className="relative h-full w-full lg:mb-14 overflow-hidden">
           <img
+            loading="lazy"
             src={logo}
             alt="Logo"
-            className="object-contain h-[11vh] lg:h-[14vh] absolute left-0"
+            className=" h-[11vh] lg:h-[14vh] absolute left-0"
           />
         </Link>
 
