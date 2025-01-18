@@ -1,9 +1,10 @@
 // src/pages/Home.js
 import pizza1 from "../assets/images/Margherita.png";
+import pizza2 from "../assets/images/Regina.png";
 
 function Home() {
   return (
-    <div className="flex flex-col h-[100%]">
+    <div className="flex flex-col h-[100%] ">
       {/* Background Section */}
       <div className="bg-background h-[100vh] relative flex flex-col lg:flex-row items-center justify-center z-1 overflow-hidden">
         {/* Left Circle Container */}
@@ -33,7 +34,7 @@ function Home() {
         <div className="relative flex justify-center items-center w-full lg:w-1/3 h-1/3 lg:h-full ">
           {/* Right Circle */}
           <div className="absolute flex items-center justify-center border-[3px] border-black/10 rounded-full w-80 h-80 bottom-[-50px] right-[-90px] lg:w-[700px] lg:h-[700px] lg:bottom-50 lg:right-[-300px] z-0">
-            <img src={pizza1} alt="Pizza" className="w-[90%] lg:h-[90%]" />
+            <img src={pizza2} alt="Pizza" className="w-[90%] lg:h-[90%]" />
           </div>
         </div>
       </div>
