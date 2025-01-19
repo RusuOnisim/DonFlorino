@@ -7,7 +7,6 @@ import pizzasData from '../components/pizzasData';
 const PizzaCard = memo(({ pizza }) => {
   return (
     <div id={`pizza-${pizza.id}`} className="flex flex-col items-center">
-      {/* Container for each pizza image with a fixed aspect ratio */}
       <div className="relative w-32 h-32 lg:w-48 lg:h-48 text-secondary bg-white rounded-full overflow-hidden shadow-md">
         <Link to={`/menu/${pizza.id}`}>
         <img
@@ -21,8 +20,8 @@ const PizzaCard = memo(({ pizza }) => {
 
         </Link>
       </div>
-      {/* Pizza name */}
       <p className="mt-4 text-lg font-karla text-center font-semibold">{pizza.name}</p>
+      <p>{pizza.price}</p>
     </div>
   );
 });

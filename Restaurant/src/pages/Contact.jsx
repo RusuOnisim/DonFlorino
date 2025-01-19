@@ -39,16 +39,16 @@ function Contact() {
           </ul>
           <p>
             <strong>Contactez-nous :</strong> Appelez au{" "}
-            <a href="tel:+32467802862" className="underline">
-              +32 467 802 862
+            <a href="tel:+32475505553" className="underline">
+              +32 475 505 553
             </a>{" "}
             <span>/ </span>
             <a
-              href="tel:02 44500 78
+              href="tel:025270007
 "
               className="underline"
             >
-              02 44500 78
+              02 527 00 07
             </a>{" "}
             ou envoyez un email à{" "}
             <a
@@ -80,16 +80,16 @@ function Contact() {
           </ul>
           <p>
             <strong>Contactez-nous :</strong> Appelez-nous au{" "}
-            <a href="tel:+32467802862" className="underline">
-              +32 467 802 862
+            <a href="tel:+32475505553" className="underline">
+            +32 475 505 553
             </a>{" "}
             <span>/ </span>
             <a
-              href="tel:02 44500 78
+              href="tel:025270007
 "
               className="underline"
             >
-              02 44500 78
+              02 527 00 07
             </a>{" "}
             ou envoyez un email à{" "}
             <a

@@ -11,7 +11,7 @@ function PizzaDetails() {
     .slice(0, 4);
 
   return (
-    <div className="lg:h-[85vh] bg-background mx-4 mt-4">
+    <div className="lg:h-[85vh] bg-background mx-4 mt-4 mb-8">
       {pizza ? (
         <div className="flex flex-col h-full lg:flex-row items-center lg:items-start ">
           {/* Main Pizza Info */}
@@ -27,8 +27,10 @@ function PizzaDetails() {
             <h1 className="text-4xl font-bold font-inika pt-4 text-center">
               {pizza.name}
             </h1>
-            <p className="my-4 text-lg font-karla text-center">{pizza.description}</p>
-            <p className="mt-2 text-xl font-karla font-semibold text-center bg-secondary/70 shadow-md text-mainText rounded-xl ml-auto mr-auto w-1/2 py-1 items-center">
+            <p className="mt-5 text-2xl font-karla text-left font-bold text-[#7B2D26]">Ingrédients:</p>
+            <p className=" text-lg font-karla text-left">{pizza.description}</p>
+            <p className="mb-2 text-lg font-karla text-left">{pizza.descriptionNL}</p>
+            <p className="mt-5 text-xl font-karla font-semibold text-center bg-[#9B2D20] shadow-md text-background rounded-xl ml-auto mr-auto lg:w-[150px] w-[100px] py-1 items-center">
               {pizza.price}
             </p>
             </div>
